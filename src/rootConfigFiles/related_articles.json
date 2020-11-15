@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "title": "Shopping websites",
+      "thumbnail": "https://picsum.photos/seed/picsum/101/75",
+      "url": "news-article.html"
+    },
+    {
+      "title": "The tastiest recipes",
+      "thumbnail": "https://picsum.photos/seed/picsum/101/75",
+      "url": "news-article.html"
+    },
+    {
+      "title": "News Articles",
+      "thumbnail": "https://picsum.photos/seed/picsum/101/75",
+      "url": "news-article.html"
+    }
+  ]
+ }

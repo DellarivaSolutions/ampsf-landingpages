@@ -1,0 +1,38 @@
+-->
+<!--
+Name: analytics.html
+Description: all things analytics - include below body tag 
+Variables:
+- %%gtag_id: Google tags ID
+- %%facebook_pixelId: Facebook pixel ID
+-->
+
+<amp-analytics type="gtag" data-credentials="include">
+<script type="application/json">
+{
+  "vars" : {
+    "gtag_id": "%%gtag_id",
+    "config" : {
+      "%%gtag_id": { "groups": "default" }
+    }
+  }
+}
+</script>
+</amp-analytics>
+
+<amp-analytics type="facebookpixel" id="facebook-pixel">
+  <script type="application/json">
+  {
+    "vars": {
+      "pixelId": "%%facebook_pixelId"
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+      }
+    }
+  }
+  </script>
+</amp-analytics>
+<!--

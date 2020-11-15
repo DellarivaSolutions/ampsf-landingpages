@@ -1,0 +1,10 @@
+# Local Netlify folder
+.netlify
+
+node_modules
+
+temp
+.cache
+dist_site
+dist_functions
+.DS_Store

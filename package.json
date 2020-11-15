@@ -1,0 +1,47 @@
+{
+  "name": "ampsf-landingpages",
+  "description": "The ampsf-landingpages sample",
+  "author": "Serge Dellariva",
+  "version": "0.1.0",
+  "private": true,
+  "config": {
+    "netlify": {
+      "production": {
+        "siteId": "",
+        "url": "https://your-name-here.cf"
+      },
+      "sandbox": {
+        "siteId": "",
+        "url": "https://your-name-here-sandbox.netlify.app"
+      }
+    },
+    "localdev": {
+      "// port to run Netlify Simulator locally": "",
+      "port": 8888,
+      "// subdomain to try to get when creating a local tunnel, e.g. <subdomain>.loca.lt": "",
+      "subdomain": "ampsf-landingpages",
+      "// timout of function in seconds, default value for Netlify functions 10 seconds": "",
+      "timeout": 10,
+      "// log level for output during develoment: trace, debug, info, warn, error": "",
+      "loglevel": "warn"
+    }
+  },
+  "scripts": {
+    "start": "ampclickfunnels start",
+    "build": "ampclickfunnels build",
+    "sandbox": "ampclickfunnels netlifyDeploySandbox",
+    "production": "ampclickfunnels netlifyDeployProduction",
+    "validate": "ampclickfunnels validate",
+    "clean": "ampclickfunnels clean"
+  },
+  "license": "Serge Dellariva Commercial Software License",
+  "dependencies": {
+    "ampclickfunnels-functions": "^1.0.0"
+  },
+  "devDependencies": {
+    "ampclickfunnels": "^1.0.0"
+  },
+  "engines": {
+    "node": "12"
+  }
+}
